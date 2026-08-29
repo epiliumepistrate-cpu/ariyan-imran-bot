@@ -14,11 +14,11 @@ cmd({
   
   if (action === 'on') {
     config.ANTI_LINK = 'true';
-    await m.reply("✅ *Anti-link enabled!* Links will now be auto-deleted 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ︎︎.");
+    await m.reply("✅ *Anti-link enabled!* Links will now be auto-deleted 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ︎︎.");
   } 
   else if (action === 'off') {
     config.ANTI_LINK = 'false';
-    await m.reply("❌ *Anti-link disabled!* Links are now allowed 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ");
+    await m.reply("❌ *Anti-link disabled!* Links are now allowed 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ");
   } 
   else {
     await m.reply(`🔍 Anti-link status: *${config.ANTI_LINK === 'true' ? 'ENABLED' : 'DISABLED'}*\n\nUsage: *.antilink on* or *.antilink off*`);
