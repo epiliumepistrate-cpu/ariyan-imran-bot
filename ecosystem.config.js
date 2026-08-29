@@ -1,6 +1,6 @@
 /**
-   * Create By 👑 𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗬𝗧 👑
-   * Contact Me on wa.me/923271054080
+   * Create By 👑Ariyan King Imran 👑
+   * Contact Me on wa.me/01351635256
 */
 module.exports = {
   apps: [{
