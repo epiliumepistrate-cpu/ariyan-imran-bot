@@ -106,18 +106,18 @@ if (!global.antiDeleteDM) global.antiDeleteDM = false
 const NEWSLETTER_JID = '33587231461422@lid'
 
 const welcomeMessages = [
-  '👋 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ SAAD KING YT ɢᴄ! ᴇɴᴊᴏʏ ʏᴏᴜʀ sᴛᴀʏ 💀',
-  '🎉 ғʀᴇsʜ ʙʟᴏᴏᴅ ɪɴ ᴛʜᴇ SAAD KING ᴅᴇɴ! 😎',
-  '☠️ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ SAAD KING🌑',
+  '👋 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ Ariyan King Imran ɢᴄ! ᴇɴᴊᴏʏ ʏᴏᴜʀ sᴛᴀʏ 💀',
+  '🎉 ғʀᴇsʜ ʙʟᴏᴏᴅ ɪɴ ᴛʜᴇ Ariyan King Imran ᴅᴇɴ! 😎',
+  '☠️ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ Ariyan King Imran🌑',
   '👑 ᴀ ɴᴇᴡ MEMBER ᴊᴏɪɴs 🔥💀',
   '🖤 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ GC! 😈✨'
 ]
 
 const goodbyeMessages = [
   '👋 sᴇᴇ ʏᴏᴜ ʟᴀᴛᴇʀ! 😎',
-  '☠️ ᴍᴀʏ ᴛʜᴇ SAAD KING YT ʀᴇᴍᴇᴍʙᴇʀ ʏᴏᴜ 💀🌑',
+  '☠️ ᴍᴀʏ ᴛʜᴇ Ariyan King Imran ʀᴇᴍᴇᴍʙᴇʀ ʏᴏᴜ 💀🌑',
   '🚀 ᴀɴᴏᴛʜᴇʀ ᴏɴᴇ ʙɪᴛᴇs ᴛʜᴇ ᴅᴜsᴛ! 😈',
-  '🖤 ᴛʜᴇ SAAD KING YT ᴡɪʟʟ ᴍɪss ʏᴏᴜ 💫',
+  '🖤 ᴛʜᴇ Ariyan King Imran ᴡɪʟʟ ᴍɪss ʏᴏᴜ 💫',
   '👻 ɢᴏᴏᴅʙʏᴇ ʟᴇɢᴇɴᴅ! 😎💀✨'
 ]
 
@@ -255,7 +255,7 @@ function addToConversation(userId, groupId, role, content) {
 function buildContextPrompt(userId, groupId, currentMessage) {
   const conversation = getUserConversation(userId, groupId)
   
-  let contextPrompt = `𝙏𝙝𝙚 ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ💀 – ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴡʜᴀᴛsᴀᴘᴘ.\n\n`
+  let contextPrompt = `𝙏𝙝𝙚 ꨄ Ariyan King Imran ꨄ💀 – ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴡʜᴀᴛsᴀᴘᴘ.\n\n`
   
   if (conversation.length > 0) {
     contextPrompt += `ᴘʀᴇᴠɪᴏᴜs ᴄᴏɴᴠᴇʀsᴀᴛɪᴏɴ:\n`
@@ -263,12 +263,12 @@ function buildContextPrompt(userId, groupId, currentMessage) {
       if (msg.role === 'user') {
         contextPrompt += `ᴜsᴇʀ: ${msg.content}\n`
       } else {
-        contextPrompt += `⟦ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ⟧💀: ${msg.content}\n`
+        contextPrompt += `⟦ ᴀ ʀ ɪ ʏ ᴀ ɴ MD ⟧💀: ${msg.content}\n`
       }
     })
   }
   
-  contextPrompt += `\nᴜsᴇʀ: "${currentMessage}"\n✦ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ✦💀: `
+  contextPrompt += `\nᴜsᴇʀ: "${currentMessage}"\n✦ ᴀ ʀ ɪ ʏ ᴀ ɴ MD ✦💀: `
   return contextPrompt
 }
 
@@ -281,7 +281,7 @@ async function getChatGPTResponse(prompt, userId = null, groupId = null) {
     try {
       const finalPrompt = userId && groupId 
         ? buildContextPrompt(userId, groupId, prompt)
-        : `⟦ ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ ⟧💀 – ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴡʜᴀᴛsᴀᴘᴘ. "${prompt}"`
+        : `⟦ ꨄ Ariyan King Imran ꨄ ⟧💀 – ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴡʜᴀᴛsᴀᴘᴘ. "${prompt}"`
       
       const url = `https://api-toxxic.zone.id/api/ai/claude?prompt=${encodeURIComponent(finalPrompt)}`
       const response = await fetch(url, { method: "GET", timeout: 5000 })
@@ -299,7 +299,7 @@ async function getChatGPTResponse(prompt, userId = null, groupId = null) {
       console.log(`⚠️ ᴀᴘɪ ᴇʀʀᴏʀ: ${apiErr.message}`)
     }
     
-    const fallbackResponse = 'ɪ\'ᴍ ⸸ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ⸸💀, ʏᴏᴜʀ ᴘᴏᴡᴇʀғᴜʟ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ. ʜᴏᴡ ᴄᴀɴ ɪ ʜᴇʟᴘ ʏᴏᴜ?'
+    const fallbackResponse = 'ɪ\'ᴍ ⸸ Ꮖᴍʀᴀɴ 𝑴𝑫 ⸸💀, ʏᴏᴜʀ ᴘᴏᴡᴇʀғᴜʟ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ. ʜᴏᴡ ᴄᴀɴ ɪ ʜᴇʟᴘ ʏᴏᴜ?'
     
     if (userId && groupId) {
       addToConversation(userId, groupId, 'assistant', fallbackResponse)
@@ -834,11 +834,11 @@ if (global.autobio) {
   }
       
       const frames = [
-        "╭━━〔 ⟦ 𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗬𝗧 𝗠𝗗 ⟧〕━━┈⊷\n┃✮│ ▱▱▱▱▱▱▱▱▱▱ 0%\n┃✮│ ⚡ ɪɴɪᴛɪᴀʟɪᴢɪɴɢ...\n╰━━━━━━━━━━━━━━┈⊷",
-        "╭━━〔 ☠︎︎ 𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗬𝗧 𝗠𝗗 ☠︎︎ 〕━━┈⊷\n┃✮│ ▰▰▱▱▱▱▱▱▱▱ 25%\n┃✮│ 🔌 ᴄᴏɴɴᴇᴄᴛɪɴɢ...\n╰━━━━━━━━━━━━━━┈⊷",
-        "╭━━〔 to⸸ 𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗬𝗧 𝗠𝗗 ⸸〕━━┈⊷\n┃✮│ ▰▰▰▰▰▱▱▱▱▱ 50%\n┃✮│ 📦 ʟᴏᴀᴅɪɴɢ...\n╰━━━━━━━━━━━━━━┈⊷",
-        "╭━━〔 𖤐 𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗬𝗧 𖤐〕━━┈⊷\n┃✮│ ▰▰▰▰▰▰▰▱▱▱ 75%\n┃✮│ ⚙️ ᴘʀᴏᴄᴇssɪɴɢ...\n╰━━━━━━━━━━━━━━┈⊷",
-        "╭━━〔 ⟦ 𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗬𝗧 𝗠𝗗 ⟧ 〕━━┈⊷\n┃✮│ ▰▰▰▰▰▰▰▰▰▰ 100%\n┃✮│ ✅ sʏsᴛᴇᴍ ʀᴇᴀᴅʏ!\n╰━━━━━━━━━━━━━━┈⊷"
+        "╭━━〔 ⟦ᴀ ʀ ɪ ʏ ᴀ ɴ king Ꮖᴍʀᴀɴ ⟧〕━━┈⊷\n┃✮│ ▱▱▱▱▱▱▱▱▱▱ 0%\n┃✮│ ⚡ ɪɴɪᴛɪᴀʟɪᴢɪɴɢ...\n╰━━━━━━━━━━━━━━┈⊷",
+        "╭━━〔 ☠︎︎ ᴀ ʀ ɪ ʏ ᴀ ɴ king Ꮖᴍʀᴀɴ ☠︎︎ 〕━━┈⊷\n┃✮│ ▰▰▱▱▱▱▱▱▱▱ 25%\n┃✮│ 🔌 ᴄᴏɴɴᴇᴄᴛɪɴɢ...\n╰━━━━━━━━━━━━━━┈⊷",
+        "╭━━〔 to⸸ ᴀ ʀ ɪ ʏ ᴀ ɴ king Ꮖᴍʀᴀɴ ⸸〕━━┈⊷\n┃✮│ ▰▰▰▰▰▱▱▱▱▱ 50%\n┃✮│ 📦 ʟᴏᴀᴅɪɴɢ...\n╰━━━━━━━━━━━━━━┈⊷",
+        "╭━━〔 𖤐 ᴀ ʀ ɪ ʏ ᴀ ɴ king Ꮖᴍʀᴀɴ 𖤐〕━━┈⊷\n┃✮│ ▰▰▰▰▰▰▰▱▱▱ 75%\n┃✮│ ⚙️ ᴘʀᴏᴄᴇssɪɴɢ...\n╰━━━━━━━━━━━━━━┈⊷",
+        "╭━━〔 ⟦ ᴀ ʀ ɪ ʏ ᴀ ɴ king Ꮖᴍʀᴀɴ ⟧ 〕━━┈⊷\n┃✮│ ▰▰▰▰▰▰▰▰▰▰ 100%\n┃✮│ ✅ sʏsᴛᴇᴍ ʀᴇᴀᴅʏ!\n╰━━━━━━━━━━━━━━┈⊷"
       ]
       
       try {
@@ -1178,7 +1178,7 @@ if (getSetting(m.chat, "autoReact", false)) {
               tictactoeGames.delete(from)
               
               await bad.sendMessage(from, {
-                image: { url: 'https://i.postimg.cc/jjdkHm9n/scar1.png' },
+                image: { url: 'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png' },
                 caption: `*╭━━〔 🏆 ᴠɪᴄᴛᴏʀʏ! 〕━━┈⊷*
 ┃
 ${boardDisplay}
@@ -1192,7 +1192,7 @@ ${boardDisplay}
               tictactoeGames.delete(from)
               
               await bad.sendMessage(from, {
-                image: { url: 'https://i.postimg.cc/vBNmp3bK/1785835299547.png' },
+                image: { url: 'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png' },
                 caption: `*╭━━〔 🤝 ᴅʀᴀᴡ 〕━━┈⊷*
 ┃
 ${boardDisplay}
@@ -1284,8 +1284,8 @@ case 'menu2': {
   await loading()
   
   const menuImages = [
-    'https://i.postimg.cc/ryHdbFpp/1785835670900.png',
-    'https://i.postimg.cc/vBNmp3bK/1785835299547.png'
+    'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png',
+    'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png'
   ]
   
   const randomImage = menuImages[Math.floor(Math.random() * menuImages.length)]
@@ -1294,8 +1294,8 @@ case 'menu2': {
   const menuText = `
 ╭━━〔 ☠️ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ☠️ 〕━━┈⊷
 ┃✮╭────────────────
-┃✮│ 🤖 ʙᴏᴛ  :*ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ︎*
-┃✮│ 👑 ᴏᴡɴᴇʀ : *ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ*
+┃✮│ 🤖 ʙᴏᴛ  :*ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ king Ꮖᴍʀᴀɴ ꨄ︎*
+┃✮│ 👑 ᴏᴡɴᴇʀ : *ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ king Ꮖᴍʀᴀɴ ꨄ*
 ┃✮│ 📦 ᴠᴇʀsɪᴏɴ  : *2.0*
 ┃✮│ 📡 ᴘʟᴀᴛғᴏʀᴍ : *𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢*
 ┃✮╰────────────────
@@ -1851,7 +1851,7 @@ case 'menu2': {
 ╰━━━━━━━━━━━━━━━━━━━━━┈⊷
 
 ╭━━━━━━━━━━━━━━━━━━━━━┈⊷
-┃ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ☠︎︎ ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ ☠︎︎
+┃ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ☠︎︎ ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ ☠︎︎
 ╰━━━━━━━━━━━━━━━━━━━━━┈⊷`
 
   await bad.sendMessage(from, {
@@ -1862,7 +1862,7 @@ case 'menu2': {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ︎",
+        newsletterName: "ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ king Ꮖᴍʀᴀɴ ꨄ︎",
         serverMessageId: -1
       }
     }
@@ -1887,12 +1887,12 @@ case 'listmenu': {
   await loading()
   
   const menuImages = [
-    'https://i.postimg.cc/vBNmp3bK/1785835299547.png',
-    'https://i.postimg.cc/ryHdbFpp/1785835670900.png',
-    'https://i.postimg.cc/BbnxChNg/1785835767830.png',
-    'https://i.postimg.cc/vBNmp3bK/1785835299547.png',
-    'https://i.postimg.cc/BbnxChNg/1785835767830.png',
-    'https://i.postimg.cc/vBNmp3bK/1785835299547.png'
+    'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png',
+    'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png',
+    'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png',
+    'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png',
+    'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png',
+    'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png'
   ]
   
   const randomImage = menuImages[Math.floor(Math.random() * menuImages.length)]
@@ -1901,8 +1901,8 @@ case 'listmenu': {
   const menuText = `
 ╭━━〔 ☠️ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ☠️ 〕━━┈⊷
 ┃✮╭────────────────
-┃✮│ 🤖 ʙᴏᴛ  :*ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ*
-┃✮│ 👑 ᴏᴡɴᴇʀ : *𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗬𝗧 𝗠𝗗︎*
+┃✮│ 🤖 ʙᴏᴛ  :*ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ*
+┃✮│ 👑 ᴏᴡɴᴇʀ : *ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ*
 ┃✮│ 📦 ᴠᴇʀsɪᴏɴ  : *2.0*
 ┃✮│ 📡 ᴘʟᴀᴛғᴏʀᴍ : *𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢*
 ┃✮╰────────────────
@@ -1927,7 +1927,7 @@ case 'listmenu': {
 ┃✮│➣ ${prefix}ɪᴍᴀɢᴇᴍᴇɴᴜ
 ╰━━━━━━━━━━━━━━━┈⊷
 
-> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ☠︎︎ ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ ☠︎︎`
+> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ☠︎︎ ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ ☠︎︎`
 
   await bad.sendMessage(from, {
     image: { url: randomImage },
@@ -1937,7 +1937,7 @@ case 'listmenu': {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ",
+        newsletterName: "ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ king Ꮖᴍʀᴀɴ ꨄ",
         serverMessageId: -1
       }
     }
@@ -1996,14 +1996,14 @@ case 'mymenu': {
 ╰━━━━━━━━━━━━━━━━━━━━━┈⊷`
 
   await bad.sendMessage(m.chat, {
-    image: { url: 'https://i.postimg.cc/vBNmp3bK/1785835299547.png' },
+    image: { url: 'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png' },
     caption: menuText,
     contextInfo: {
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
             newsletterJid: NEWSLETTER_JID,
-            newsletterName: "ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ",
+            newsletterName: "ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ",
             serverMessageId: -1
         }
     }
@@ -2074,14 +2074,14 @@ case 'groupmenu': {
 ╰━━━━━━━━━━━━━━━━━━━━━┈⊷`
 
   await bad.sendMessage(m.chat, {
-    image: { url: 'https://i.postimg.cc/BbnxChNg/1785835767830.png' },
+    image: { url: 'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png' },
     caption: menuText,
     contextInfo: {
       forwardingScore: 999,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ︎︎",
+        newsletterName: "ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ︎︎",
         serverMessageId: -1
               }
     }
@@ -2131,14 +2131,14 @@ case 'downloadmenu': {
 ╰━━━━━━━━━━━━━━━━━━━━━┈⊷`
 
   await bad.sendMessage(m.chat, {
-    image: { url: 'https://i.postimg.cc/BbnxChNg/1785835767830.png' },
+    image: { url: 'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png' },
     caption: menuText,
     contextInfo: {
       forwardingScore: 999,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "toꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ︎︎",
+        newsletterName: "toꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ︎︎",
         serverMessageId: -1
         }
     }
@@ -2211,14 +2211,14 @@ case 'funmenu': {
 ╰━━━━━━━━━━━━━━━━━━━━━┈⊷`
 
   await bad.sendMessage(m.chat, {
-    image: { url: 'https://i.postimg.cc/vBNmp3bK/1785835299547.png' },
+    image: { url: 'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png' },
     caption: menuText,
     contextInfo: {
       forwardingScore: 999,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ",
+        newsletterName: "ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ",
         serverMessageId: -1
               }
     }
@@ -2258,14 +2258,14 @@ case 'gamemenu': {
 ╰━━━━━━━━━━━━━━━━━━━━━┈⊷`
 
   await bad.sendMessage(m.chat, {
-    image: { url: 'https://i.postimg.cc/ryHdbFpp/1785835670900.png' },
+    image: { url: 'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png' },
     caption: menuText,
     contextInfo: {
       forwardingScore: 999,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ",
+        newsletterName: "ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ",
         serverMessageId: -1
               }
     }
@@ -2351,14 +2351,14 @@ case 'animemenu': {
 ╰━━━━━━━━━━━━━━━━━━━━━┈⊷`
 
   await bad.sendMessage(m.chat, {
-    image: { url: 'https://i.postimg.cc/vBNmp3bK/1785835299547.png' },
+    image: { url: 'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png' },
     caption: menuText,
     contextInfo: {
       forwardingScore: 999,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ︎︎",
+        newsletterName: "ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ︎︎",
         serverMessageId: -1
               }
     }
@@ -2403,14 +2403,14 @@ case 'stickermenu': {
 ╰━━━━━━━━━━━━━━━━━━━━━┈⊷`
 
   await bad.sendMessage(m.chat, {
-    image: { url: 'https://i.postimg.cc/BbnxChNg/1785835767830.png' },
+    image: { url: 'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png' },
     caption: menuText,
     contextInfo: {
       forwardingScore: 999,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ︎︎",
+        newsletterName: "ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ︎︎",
         serverMessageId: -1
               }
     }
@@ -2502,14 +2502,14 @@ case 'utilitymenu': {
 ╰━━━━━━━━━━━━━━━━━━━━━┈⊷`
 
   await bad.sendMessage(m.chat, {
-    image: { url: 'https://i.postimg.cc/ryHdbFpp/1785835670900.png' },
+    image: { url: 'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png' },
     caption: menuText,
     contextInfo: {
       forwardingScore: 999,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎",
+        newsletterName: "☠︎︎ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ☠︎︎",
         serverMessageId: -1
               }
     }
@@ -2545,14 +2545,14 @@ case 'voicemenu': {
 ╰━━━━━━━━━━━━━━━━━━━━━┈⊷`
 
   await bad.sendMessage(m.chat, {
-    image: { url: 'https://i.postimg.cc/vBNmp3bK/1785835299547.png' },
+    image: { url: 'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png' },
     caption: menuText,
     contextInfo: {
       forwardingScore: 999,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ",
+        newsletterName: "ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ",
         serverMessageId: -1
               }
     }
@@ -2637,14 +2637,14 @@ case 'imagemenu': {
 ╰━━━━━━━━━━━━━━━━━━━━━┈⊷`
 
   await bad.sendMessage(m.chat, {
-    image: { url: 'https://i.postimg.cc/BbnxChNg/1785835767830.png' },
+    image: { url: 'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png' },
     caption: menuText,
     contextInfo: {
       forwardingScore: 999,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ︎︎",
+        newsletterName: "ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ︎︎",
         serverMessageId: -1
               }
     }
@@ -2680,14 +2680,14 @@ case 'emojimenu': {
 ╰━━━━━━━━━━━━━━━━━━━━━┈⊷`
 
   await bad.sendMessage(m.chat, {
-    image: { url: 'https://i.postimg.cc/ryHdbFpp/1785835670900.png' },
+    image: { url: 'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png' },
     caption: menuText,
     contextInfo: {
       forwardingScore: 999,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ",
+        newsletterName: "ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ",
         serverMessageId: -1
               }
     }
@@ -2775,14 +2775,14 @@ case 'logomenu': {
 ╰━━━━━━━━━━━━━━━━━━━━━┈⊷`
 
   await bad.sendMessage(m.chat, {
-    image: { url: 'https://i.postimg.cc/vBNmp3bK/1785835299547.png' },
+    image: { url: 'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png' },
     caption: menuText,
     contextInfo: {
       forwardingScore: 999,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ",
+        newsletterName: "ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ",
         serverMessageId: -1
               }
     }
@@ -2827,14 +2827,14 @@ case 'aimenu': {
 ╰━━━━━━━━━━━━━━━━━━━━━┈⊷`
 
   await bad.sendMessage(m.chat, {
-    image: { url: 'https://i.postimg.cc/BbnxChNg/1785835767830.png' },
+    image: { url: 'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png' },
     caption: menuText,
     contextInfo: {
       forwardingScore: 999,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ",
+        newsletterName: "ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ",
         serverMessageId: -1
               }
     }
@@ -2878,14 +2878,14 @@ case 'miscmenu': {
 ╰━━━━━━━━━━━━━━━━━━━━━┈⊷`
 
   await bad.sendMessage(m.chat, {
-    image: { url: 'https://i.postimg.cc/ryHdbFpp/1785835670900.png' },
+    image: { url: 'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png' },
     caption: menuText,
     contextInfo: {
       forwardingScore: 999,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ",
+        newsletterName: "ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ",
         serverMessageId: -1
       }
     }
@@ -3170,7 +3170,7 @@ case 'cnicinfo': {
             txt += `*Record #${i+1}*\n📱: ${r.mobile}\n👤: ${r.name}\n🆔: ${r.cnic}\n🏠: ${r.address}\n\n`
         })
 
-        txt += `\n> ☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎`
+        txt += `\n> ☠︎︎ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ☠︎︎`
 
         await bad.sendMessage(from, { text: txt }, { quoted: mek })
 
@@ -3221,7 +3221,7 @@ case 'alive': {
   const uptime = runtime(process.uptime());
   reply(
 `🟢 *Bot Status:* ONLINE
-👑 *Owner:* ༒︎ 𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗬𝗧 ༒︎
+👑 *Owner:* ༒︎ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ༒︎
 ⏱️ *Uptime:* ${uptime}`
   );
 }
@@ -3273,7 +3273,7 @@ case 'gcstatus': {
     isForwarded: true,
     forwardedNewsletterMessageInfo: {
       newsletterJid: NEWSLETTER_JID,
-      newsletterName: "ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ",
+      newsletterName: "ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ",
       serverMessageId: -1
     }
   }
@@ -3400,7 +3400,7 @@ break
 
 case 'restart': {
   if (!isCreator) return reply("ᴏᴡɴᴇʀ ᴏɴʟʏ.")
-  reply('ʀᴇsᴛᴀʀᴛɪɴɢ ☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ...')
+  reply('ʀᴇsᴛᴀʀᴛɪɴɢ ☠︎︎ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ...')
   exec('pm2 restart all')
 }
 break
@@ -3435,7 +3435,7 @@ case "getstatus": {
             const statusText = quotedMsg.text || 'Status text';
             
             await bad.sendMessage(m.sender, {
-                text: `✅ *sᴛᴀᴛᴜs sᴀᴠᴇᴅ*\n\n💬 ${statusText}\n\n✨ sᴀᴠᴇᴅ ʙʏ ☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎ `
+                text: `✅ *sᴛᴀᴛᴜs sᴀᴠᴇᴅ*\n\n💬 ${statusText}\n\n✨ sᴀᴠᴇᴅ ʙʏ ☠︎︎ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ☠︎︎ `
             });
             
             await bad.sendMessage(m.chat, {react: {text: '✅', key: m.key}});
@@ -3453,12 +3453,12 @@ case "getstatus": {
         if (mediaType === 'image') {
             await bad.sendMessage(m.sender, {
                 image: media,
-                caption: `✅ *sᴛᴀᴛᴜs sᴀᴠᴇᴅ*\n\n📸 ɪᴍᴀɢᴇ sᴛᴀᴛᴜs\n📅 ${new Date().toLocaleString()}\n\n✨ sᴀᴠᴇᴅ ʙʏ ☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎`
+                caption: `✅ *sᴛᴀᴛᴜs sᴀᴠᴇᴅ*\n\n📸 ɪᴍᴀɢᴇ sᴛᴀᴛᴜs\n📅 ${new Date().toLocaleString()}\n\n✨ sᴀᴠᴇᴅ ʙʏ ☠︎︎ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ☠︎︎`
             });
         } else if (mediaType === 'video') {
             await bad.sendMessage(m.sender, {
                 video: media,
-                caption: `✅ *sᴛᴀᴛᴜs sᴀᴠᴇᴅ*\n\n🎥 ᴠɪᴅᴇᴏ sᴛᴀᴛᴜs\n📅 ${new Date().toLocaleString()}\n\n✨ sᴀᴠᴇᴅ ʙʏ ☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎`
+                caption: `✅ *sᴛᴀᴛᴜs sᴀᴠᴇᴅ*\n\n🎥 ᴠɪᴅᴇᴏ sᴛᴀᴛᴜs\n📅 ${new Date().toLocaleString()}\n\n✨ sᴀᴠᴇᴅ ʙʏ ☠︎︎ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ☠︎︎`
             });
         }
         
@@ -5336,7 +5336,7 @@ case 'telegramuserstalk': {
   if (!text) return reply(`*✈️ ᴛᴇʟᴇɢʀᴀᴍ ᴜsᴇʀ sᴛᴀʟᴋ*
 
 💡 ᴇxᴀᴍᴘʟᴇ:
-${prefix}tgstalk ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ`)
+${prefix}tgstalk ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ`)
 
   try {
     const response = await axios.get(`${API_BASE}/telegram-user?apikey=${API_KEY}&user=${encodeURIComponent(text)}`)
@@ -5345,7 +5345,7 @@ ${prefix}tgstalk ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿
     if (!data) return reply('❌ ᴜsᴇʀ ɴᴏᴛ ғᴏᴜɴᴅ')
     
     await bad.sendMessage(from, {
-      image: { url: data.photo || data.avatar || 'https://i.postimg.cc/vBNmp3bK/1785835299547.png' },
+      image: { url: data.photo || data.avatar || 'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png' },
       caption: `*╭━━〔 ✈️ ᴛᴇʟᴇɢʀᴀᴍ ᴜsᴇʀ sᴛᴀʟᴋ 〕━━┈⊷*
 ┃
 ┃ 👤 ᴜsᴇʀɴᴀᴍᴇ: ${data.username || 'N/A'}
@@ -5373,7 +5373,7 @@ case 'telegramchannelstalk': {
   if (!text) return reply(`*✈️ ᴛᴇʟᴇɢʀᴀᴍ ᴄʜᴀɴɴᴇʟ sᴛᴀʟᴋ*
 
 💡 ᴇxᴀᴍᴘʟᴇ:
-${prefix}tgchannelstalk ☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎`)
+${prefix}tgchannelstalk ☠︎︎ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ☠︎︎`)
 
   try {
     const response = await axios.get(`${API_BASE}/telegram-channel?apikey=${API_KEY}&user=${encodeURIComponent(text)}`)
@@ -5382,7 +5382,7 @@ ${prefix}tgchannelstalk ☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎`)
     if (!data) return reply('❌ ᴄʜᴀɴɴᴇʟ ɴᴏᴛ ғᴏᴜɴᴅ')
     
     await bad.sendMessage(from, {
-      image: { url: data.photo || data.avatar || 'https://i.postimg.cc/vBNmp3bK/1785835299547.png' },
+      image: { url: data.photo || data.avatar || 'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png' },
       caption: `*╭━━〔 ✈️ ᴛᴇʟᴇɢʀᴀᴍ ᴄʜᴀɴɴᴇʟ sᴛᴀʟᴋ 〕━━┈⊷*
 ┃
 ┃ 📢 ᴄʜᴀɴɴᴇʟ: ${data.title || data.name || 'N/A'}
@@ -5410,7 +5410,7 @@ case 'telegramgroupstalk': {
   if (!text) return reply(`*✈️ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ sᴛᴀʟᴋ*
 
 💡 ᴇxᴀᴍᴘʟᴇ:
-${prefix}tggroupstalk ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ`)
+${prefix}tggroupstalk ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ`)
 
   try {
     const response = await axios.get(`${API_BASE}/telegram-group?apikey=${API_KEY}&user=${encodeURIComponent(text)}`)
@@ -5419,7 +5419,7 @@ ${prefix}tggroupstalk ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 �
     if (!data) return reply('❌ ɢʀᴏᴜᴘ ɴᴏᴛ ғᴏᴜɴᴅ')
     
     await bad.sendMessage(from, {
-      image: { url: data.photo || data.avatar || 'https://i.postimg.cc/vBNmp3bK/1785835299547.png' },
+      image: { url: data.photo || data.avatar || 'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png' },
       caption: `*╭━━〔 ✈️ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ sᴛᴀʟᴋ 〕━━┈⊷*
 ┃
 ┃ 👥 ɢʀᴏᴜᴘ: ${data.title || data.name || 'N/A'}
@@ -5446,7 +5446,7 @@ case 'xstalk': {
   if (!text) return reply(`*🐦 ᴛᴡɪᴛᴛᴇʀ/x sᴛᴀʟᴋ*
 
 💡 ᴇxᴀᴍᴘʟᴇ:
-${prefix}twitterstalk ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ`)
+${prefix}twitterstalk ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ`)
 
   try {
     const response = await axios.get(`${API_BASE}/twitter-user?apikey=${API_KEY}&user=${encodeURIComponent(text)}`)
@@ -5455,7 +5455,7 @@ ${prefix}twitterstalk ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 �
     if (!data) return reply('❌ ᴜsᴇʀ ɴᴏᴛ ғᴏᴜɴᴅ')
     
     await bad.sendMessage(from, {
-      image: { url: data.profile_image_url || data.avatar || 'https://i.postimg.cc/BbnxChNg/1785835767830.png' },
+      image: { url: data.profile_image_url || data.avatar || 'https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png' },
       caption: `*╭━━〔 🐦 ᴛᴡɪᴛᴛᴇʀ/x sᴛᴀʟᴋ 〕━━┈⊷*
 ┃
 ┃ 👤 ᴜsᴇʀɴᴀᴍᴇ: ${data.username || data.screen_name || 'N/A'}
@@ -5490,7 +5490,7 @@ case 'city': case 'night': case 'sunset': case 'rain': {
   
   await bad.sendMessage(m.chat, {
     image: { url: sceneryImages[command] },
-    caption: `*◆ ${command.toUpperCase()} ᴡᴀʟʟᴘᴀᴘᴇʀ*\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗬𝗧 𝗠𝗗︎`
+    caption: `*◆ ${command.toUpperCase()} ᴡᴀʟʟᴘᴀᴘᴇʀ*\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ`
   }, { quoted: m })
 }
 break
@@ -5506,7 +5506,7 @@ case 'cosplay': {
     if (data.images && data.images[0]) {
       await bad.sendMessage(m.chat, {
         image: { url: data.images[0].url },
-        caption: `*◆ ᴄᴏsᴘʟᴀʏ*\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎`
+        caption: `*◆ ᴄᴏsᴘʟᴀʏ*\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ☠︎︎ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ☠︎︎`
       }, { quoted: m })
     } else {
       throw new Error('No cosplay found')
@@ -5515,7 +5515,7 @@ case 'cosplay': {
     // Fallback to Unsplash
     await bad.sendMessage(m.chat, {
       image: { url: 'https://source.unsplash.com/800x600/?cosplay,anime,costume' },
-      caption: `*◆ ᴄᴏsᴘʟᴀʏ*\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗬𝗧 𝗠𝗗︎︎`
+      caption: `*◆ ᴄᴏsᴘʟᴀʏ*\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ`
     }, { quoted: m })
   }
 }
@@ -5536,7 +5536,7 @@ case 'neontext': case 'neonglitch': case 'makingneon': {
     
     await bad.sendMessage(m.chat, {
       image: { url: apiUrl },
-      caption: `*ɴᴇᴏɴ ᴛᴇxᴛ ᴍᴀᴋᴇʀ*\n\n📝 ᴛᴇxᴛ: ${text}\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗬𝗧 𝗠𝗗`
+      caption: `*ɴᴇᴏɴ ᴛᴇxᴛ ᴍᴀᴋᴇʀ*\n\n📝 ᴛᴇxᴛ: ${text}\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ`
     }, { quoted: m })
     
   } catch (err) {
@@ -5601,7 +5601,7 @@ case 'blackpinklogo': case 'sandsummer': case 'style1917': case 'freecreate': {
       try {
         await bad.sendMessage(m.chat, {
           image: { url: apiUrl },
-          caption: `*${command.toUpperCase()} ᴛᴇxᴛ ᴍᴀᴋᴇʀ*\n\n📝 ᴛᴇxᴛ: ${text}\n🎨 sᴛʏʟᴇ: ${style}\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗬𝗧 𝗠𝗗`
+          caption: `*${command.toUpperCase()} ᴛᴇxᴛ ᴍᴀᴋᴇʀ*\n\n📝 ᴛᴇxᴛ: ${text}\n🎨 sᴛʏʟᴇ: ${style}\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ`
         }, { quoted: m })
         success = true
         break
@@ -5648,7 +5648,7 @@ break
 // ═══════════════════════════════════════════════════════════
 
 case 'logo2': case 'makelogo': case 'createlogo': {
-  if (!text) return reply(`ᴇxᴀᴍᴘʟᴇ: ${prefix + command} ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ`)
+  if (!text) return reply(`ᴇxᴀᴍᴘʟᴇ: ${prefix + command} ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ`)
   
   await loading()
   
@@ -5679,7 +5679,7 @@ case 'logo2': case 'makelogo': case 'createlogo': {
       try {
         await bad.sendMessage(m.chat, {
           image: { url: apiUrl },
-          caption: `*ʟᴏɢᴏ ᴍᴀᴋᴇʀ - ${randomStyle.name} sᴛʏʟᴇ*\n\n📝 ${text}\n🎨 ${randomStyle.name}\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗬𝗧 𝗠𝗗`
+          caption: `*ʟᴏɢᴏ ᴍᴀᴋᴇʀ - ${randomStyle.name} sᴛʏʟᴇ*\n\n📝 ${text}\n🎨 ${randomStyle.name}\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ`
         }, { quoted: m })
         success = true
         break
@@ -5693,7 +5693,7 @@ case 'logo2': case 'makelogo': case 'createlogo': {
       const fallbackUrl = `https://omegatech-api.dixonomega.tech/api/Maker/neon-text?text=${encodedText}`
       await bad.sendMessage(m.chat, {
         image: { url: fallbackUrl },
-        caption: `*ʟᴏɢᴏ ᴍᴀᴋᴇʀ - NEON sᴛʏʟᴇ*\n\n📝 ${text}\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ︎︎`
+        caption: `*ʟᴏɢᴏ ᴍᴀᴋᴇʀ - NEON sᴛʏʟᴇ*\n\n📝 ${text}\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ︎︎`
       }, { quoted: m })
     }
     
@@ -5720,7 +5720,7 @@ case 'logo': case 'advancedlogo': {
     
     await bad.sendMessage(m.chat, {
       image: { url: apiUrl },
-      caption: `*ᴀᴅᴠᴀɴᴄᴇᴅ ʟᴏɢᴏ ᴍᴀᴋᴇʀ*\n\n📝 Line 1: ${line1}\n📝 Line 2: ${line2}\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ︎︎`
+      caption: `*ᴀᴅᴠᴀɴᴄᴇᴅ ʟᴏɢᴏ ᴍᴀᴋᴇʀ*\n\n📝 Line 1: ${line1}\n📝 Line 2: ${line2}\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ︎︎`
     }, { quoted: m })
     
   } catch (err) {
