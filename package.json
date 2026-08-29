@@ -1,7 +1,7 @@
 {
   "name": "saadkingyt-md",
   "version": "2.0.0",
-  "description": "Powerful whatsapp bot created by Saad king yt",
+  "description": "Powerful whatsapp bot created by Ariyan king imran",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
