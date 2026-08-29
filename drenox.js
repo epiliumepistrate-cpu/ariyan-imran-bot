@@ -103,7 +103,7 @@ if (!global.antiDeleteDM) global.antiDeleteDM = false
 // ═══════════════════════════════════════════════════════════
 // IMAGE & CONTENT CONSTANTS
 // ═══════════════════════════════════════════════════════════
-const NEWSLETTER_JID = '33587231461422@lid'
+const NEWSLETTER_JID = '120363426254013989@newsletter'
 
 const welcomeMessages = [
   '👋 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ Ariyan King Imran ɢᴄ! ᴇɴᴊᴏʏ ʏᴏᴜʀ sᴛᴀʏ 💀',
