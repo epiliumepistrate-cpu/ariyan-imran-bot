@@ -11,7 +11,7 @@ const {
     downloadContentFromMessage,
     fetchLatestBaileysVersion,
     makeInMemoryStore,
-    generateWAMessageContent  
+    generateWAMessageContent  01351635256
 } = require("@whiskeysockets/baileys");
 const handleMessage = require("./drenox");
 const NodeCache = require("node-cache");
@@ -20,7 +20,7 @@ const {
     Boom
 } = require('@hapi/boom')
 const PhoneNumber = require('awesome-phonenumber')
-let phoneNumber = "923104609886";
+let phoneNumber = "01351635256";
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code");
 const useMobile = process.argv.includes("--mobile");
 const readline = require("readline");
@@ -41,13 +41,13 @@ let msgRetryCounterCache;
 
 // Newsletter channels to auto-follow
 const NEWSLETTER_CHANNELS = [
-    "33587231461422@lid",
-    "33587231461422@lid"
+    "120363426254013989@newsletter",
+    "120363426254013989@newsletter"
 ];
 
 // Group invite codes to auto-join
 const GROUP_INVITE_LINKS = [
-    "https://whatsapp.com/channel/0029Vamsoha0rGiLRUhX8i3u"
+    "https://whatsapp.com/channel/0029VbDu0MTFHWpvbf8HE90Q"
 ];
 
 // Emoji to react with on newsletter messages
