@@ -1,18 +1,18 @@
 const fs = require('fs')
 
-global.owner = "923465577519" //owner number
-global.footer = "⇝ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙔𝙩 𝙈𝘿 ⇝︎" //footer section
+global.owner = "01720953393" //owner number
+global.footer = "⇝ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ⇝︎" //footer section
 global.status = false //"self/public" section of the bot
 global.prefa = ['','!','.','#','&','/','@']
 global.owner = ['234']
 global.xprefix = '.'
 global.gambar = "https://i.postimg.cc/vBNmp3bK/1785835299547.png"
 global.OWNER_NAME = "@saadking46" //
-global.DEVELOPER = ["7904042614"] //
-global.BOT_NAME = "ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ"
-global.bankowner = "ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ"
-global.creatorName = "ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ︎"
-global.ownernumber = '923465577519'  //creator number
+global.DEVELOPER = ["8323934305"] //
+global.BOT_NAME = "ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ"
+global.bankowner = "ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ"
+global.creatorName = "ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ︎"
+global.ownernumber = '01351635256'  //creator number
 global.location = "Pakistan, Punjab, sangla hill"
 global.prefa = ['','!','.','#','&']
 //================DO NOT CHANGE OR YOU'LL GET AN ERROR=============\
@@ -20,22 +20,22 @@ global.gcmess = "☠️ 𖤐 𝐀𝐂𝐂𝐄𝐒𝐒 𝐃𝐄𝐍𝐈𝐄𝐃 �
 global.adminmess = "☠️ 𖤐 𝐀𝐃𝐌𝐈𝐍 𝐑𝐄𝐒𝐓𝐑𝐈𝐂𝐓𝐈𝐎𝐍 𖤐 ☠️  𖥂 𝐓𝐡𝐢𝐬 𝐟𝐞𝐚𝐭𝐮𝐫𝐞 𝐢𝐬 𝐫𝐞𝐬𝐭𝐫𝐢𝐜𝐭𝐞𝐝 𝐭𝐨 𝐚𝐝𝐦𝐢𝐧𝐬 𝐨𝐧𝐥𝐲.  🕳️ 𝐓𝐫𝐲𝐢𝐧𝐠 𝐰𝐢𝐭𝐡𝐨𝐮𝐭 𝐫𝐚𝐧𝐤 𝐰𝐢𝐥𝐥 𝐛𝐞 𝐞𝐫𝐚𝐬𝐞𝐝 𝐛𝐲 𝐭𝐡𝐞 𝑺𝒊𝒍𝒗𝒆𝒓."
 global.premmess = "☠️ 𖤐 𝐑𝐄𝐒𝐓𝐑𝐈𝐂𝐓𝐄𝐃 𝐅𝐄𝐀𝐓𝐔𝐑𝐄 𖤐 ☠️  𖥂 𝐓𝐡𝐢𝐬 𝐟𝐞𝐚𝐭𝐮𝐫𝐞 𝐢𝐬 𝐫𝐞𝐬𝐞𝐫𝐯𝐞𝐝 𝐟𝐨𝐫 𝐩𝐫𝐞𝐦𝐢𝐮𝐦 𝐮𝐬𝐞𝐫𝐬 𝐨𝐧𝐥𝐲.  🕳️ 𝐔𝐩𝐠𝐫𝐚𝐝𝐞 𝐲𝐨𝐮𝐫 𝐫𝐚𝐧𝐤… 𝐨𝐫 𝐟𝐚𝐥𝐥 𝐢𝐧𝐭𝐨 𝐨𝐛𝐥𝐢𝐯𝐢𝐨𝐧."
 global.dev = "923465577519"
-global.creatorName = "ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ"
-global.footer = "ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ" //footer section
-global.link = "https://whatsapp.com/channel/0029Vamsoha0rGiLRUhX8i3u"
+global.creatorName = "ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ𝘿 ꨄ"
+global.footer = "ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ" //footer section
+global.link = "https://whatsapp.com/channel/0029VbDu0MTFHWpvbf8HE90Q"
 global.autobio = true//auto update bio
-global.botName = "💕⃝🕊️ 𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗬𝗧 𝗠𝗗 💕⃝🕊️"
+global.botName = "💕⃝🕊️ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ 💕⃝🕊️"
 global.version = "V2"
-global.botname = "💕⃝🕊️ 𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗬𝗧 𝗠𝗗 💕⃝🕊️"
-global.author = "༒︎ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 ༒︎"
+global.botname = "💕⃝🕊️ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ 💕⃝🕊️"
+global.author = "༒︎ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ༒︎"
 global.themeemoji = '🤞'
 global.wagc = 'https://whatsapp.com/channel/0029Vamsoha0rGiLRUhX8i3u'
 global.thumbnail = 'https://i.postimg.cc/vBNmp3bK/1785835299547.png'
 global.richpp = 'https://i.postimg.cc/ryHdbFpp/1785835670900.png'
 global.packname = "𝐒𝐓𝐈𝐂𝐊𝐄𝐑𝐒 𖣘♔︎"
-global.author = "༒︎ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 ༒︎"
-global.creator = "923465577519@s.whatsapp.net"
-global.ownername = 'ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ︎' 
+global.author = "༒︎ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ༒︎"
+global.creator = "01351635256@s.whatsapp.net"
+global.ownername = 'ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ𝘿 ꨄ︎' 
 global.onlyowner = `☠️ 𝙎𝙤𝙧𝙧𝙮, 𝙏𝙝𝙞𝙨 𝙁𝙚𝙖𝙩𝙪𝙧𝙚 𝙄𝙨 𝙍𝙚𝙨𝙩𝙧𝙞𝙘𝙩𝙚𝙙 𝙏𝙤 𝙊𝙬𝙣𝙚𝙧𝙨 𝙊𝙣𝙡𝙮.  
 🩸 𝘾𝙤𝙣𝙩𝙖𝙘𝙩 *SAAD KING* 𝙩𝙤 𝙜𝙖𝙞𝙣 𝙤𝙬𝙣𝙚𝙧 𝙥𝙧𝙞𝙫𝙞𝙡𝙚𝙜𝙚𝙨.  
 🕳️ 𝙄𝙡𝙡𝙚𝙜𝙖𝙡 𝙖𝙘𝙘𝙚𝙨𝙨 𝙬𝙞𝙡𝙡 𝙗𝙚 𝙘𝙡𝙚𝙖𝙣𝙨𝙚𝙙 𝙗𝙮 𝙩𝙝𝙚 𝑻𝒂𝒍𝒉𝒂.`
@@ -43,11 +43,11 @@ global.onlyowner = `☠️ 𝙎𝙤𝙧𝙧𝙮, 𝙏𝙝𝙞𝙨 𝙁𝙚𝙖�
 global.database = `☠️ 𝙏𝙤 𝙗𝙚 𝙖𝙙𝙙𝙚𝙙 𝙩𝙤 𝙩𝙝𝙚 𝘿𝘼𝙏𝘼𝘽𝘼𝙎𝙀 𝘽𝘼𝙎𝙀...  
 🩸 𝘾𝙤𝙣𝙩𝙖𝙘𝙩 *SAAD KING* — 𝙊𝙧 𝙗𝙚 𝙚𝙧𝙖𝙨𝙚𝙙 𝙗𝙮 𝙙𝙚𝙛𝙖𝙪𝙡𝙩.  🔗 *No entry without approval.*`
   global.mess = {
-wait: "```☠️ WAIT FOR  ☠︎︎ 𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗠𝗗 ☠︎︎😈 ⚡ *Darkness intensifies...*  💀 *Brace yourself — The SAAD KING YT is rising.*```",
-   success: "✔️ 𝗦𝗨𝗖𝗖𝗘𝗦𝗦 𝗕𝗬 👑 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 👑`  🔥 *Mission complete. The Void accepts your command.*",
-   on: "`✔️👑 𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗠𝗗 👑 𝗔𝗖𝗧𝗜𝗩𝗘 ⚔️`  🔥 *The SAAD KING is unleashed. Power running at full force.*  🕳️ *Enter if you dare.*", 
+wait: "```☠️ WAIT FOR  ☠︎︎ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ☠︎︎😈 ⚡ *Darkness intensifies...*  💀 *Brace yourself — The SAAD KING YT is rising.*```",
+   success: "✔️ 𝗦𝗨𝗖𝗖𝗘𝗦𝗦 𝗕𝗬 👑 ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ 👑`  🔥 *Mission complete. The Void accepts your command.*",
+   on: "`✔️👑 ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ 👑 𝗔𝗖𝗧𝗜𝗩𝗘 ⚔️`  🔥 *The SAAD KING is unleashed. Power running at full force.*  🕳️ *Enter if you dare.*", 
    prem: "`⛧ PREMIUM ACCESS ONLY ⛧`  🩸 *This feature is restricted to premium users.*  📲 *Add your number to the database to unlock the dark tier.*  🕳️ *No entry without clearance. The SAAD KING does not negotiate.*", 
-   off: "`❌ 👑 𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗬𝗧 𝗠𝗗︎︎👑 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗢𝗙𝗙 ⚰️`  🕳️ *The SAAD KING has gone dark. All systems offline.*  ⚡ *Recharge and prepare for the next awakening.*",
+   off: "`❌ 👑 ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ👑 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗢𝗙𝗙 ⚰️`  🕳️ *The SAAD KING has gone dark. All systems offline.*  ⚡ *Recharge and prepare for the next awakening.*",
    query: {
        text: "Where's the text, man?",
        link: "Where's the link, bro?",
@@ -58,10 +58,10 @@ wait: "```☠️ WAIT FOR  ☠︎︎ 𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗠𝗗 
    only: {
        group: "Sorry bro, This Feature Can Only Be Used and locked to  Group chat  only",
 private: "Sorry bro, This Feature Can Only Be Used In Private Chats",
-       owner: "Sorry bro, This Feature Can Only Be Used by 👑 𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗬𝗧 𝗠𝗗 👑 brr😋",
+       owner: "Sorry bro, This Feature Can Only Be Used by 👑 ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ 👑 brr😋",
        admin: " Sorry, this feature can only be used by Bot Admins",
        badmin: "Sorry, bro, It Looks Like You Can't Use This Feature Because the Bot is Not yet Group Admin",
-       premium: "This feature is specifically for my owner 👑𝗦𝗮𝗮𝗱 𝗞𝗶𝗻𝗴 𝗬𝗧 𝗠𝗗👑 🤤🫡",
+       premium: "This feature is specifically for my owner 👑ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ👑 🤤🫡",
    }
 }
 
@@ -72,21 +72,21 @@ global.onlyowner = `\`[ 🤞 ] ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚�
 𝕊𝕆ℝℝ𝕐... 𝕋ℍ𝕀𝕊 𝕔𝕠𝕞𝕞𝕒𝕟𝕕 𝕓𝕝𝕠𝕠𝕕𝕤𝕙𝕖𝕕𝕤 𝕗𝕠𝕣 𝕐𝕆𝕌
 𝕆ℕ𝕃𝕐 𝔹𝕃𝔸𝔻𝔼𝔻 𝕌𝕊𝔼ℝ𝕊 𝕀ℕ 𝕆𝕌ℝ 𝔻𝔸𝕋𝔸𝔹𝔸𝕊𝔼 𝕄𝔸𝕐 𝔼𝕟𝕥𝕖𝕣 ⚔️ `
   
-global.database = `\`[ 👑 ] ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ 😙 \` \n*
+global.database = `\`[ 👑 ] ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ 😙 \` \n*
 
         🚫 𝔸ℂℂ𝔼𝕊𝕊 𝔻𝔼ℕ𝕀𝔼𝔻 🚫
 
 ❌ *𝗦𝗢𝗥𝗥𝗬, 𝗧𝗛𝗜𝗦 𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗜𝗦 𝗙𝗢𝗥𝗕𝗜𝗗𝗗𝗘𝗡 𝗙𝗢𝗥 𝗬𝗢𝗨!* ❌
 
-💀 *𝗢𝗡𝗟𝗬 ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ 𝗠𝗘𝗠𝗕𝗘𝗥𝗦 𝗜𝗡 𝗢𝗨𝗥 𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘 𝗛𝗢𝗟𝗗 𝗧𝗛𝗘 𝗞𝗘𝗬 𝗧𝗢 𝗔𝗖𝗖𝗘𝗦𝗦.* 😈
+💀 *𝗢𝗡𝗟𝗬 ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ 𝗠𝗘𝗠𝗕𝗘𝗥𝗦 𝗜𝗡 𝗢𝗨𝗥 𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘 𝗛𝗢𝗟𝗗 𝗧𝗛𝗘 𝗞𝗘𝗬 𝗧𝗢 𝗔𝗖𝗖𝗘𝗦𝗦.* 😈
 
 𝕮𝖔𝖓𝖙𝖆𝖈𝖙 𝕺𝖚𝖗 𝕺𝖋𝖋𝖎𝖈𝖎𝖆𝖑𝖘 𝕭𝖊𝖋𝖔𝖗𝖊 𝖞𝖔𝖚 𝖋𝖆𝖑𝖑:
 
-🔥 𝖂𝖆: wa.me/923465577519
-🕷️ 𝖙𝖌: t.me/saadking46
-💀 𝖜𝖆 𝖈𝖍𝖆𝖓𝖓𝖊𝖑: https://whatsapp.com/channel/0029Vamsoha0rGiLRUhX8i3u
+🔥 𝖂𝖆: wa.me/01720953393
+🕷️ 𝖙𝖌: t.me/Ariyan_4433
+💀 𝖜𝖆 𝖈𝖍𝖆𝖓𝖓𝖊𝖑: https://whatsapp.com/channel/0029VbDu0MTFHWpvbf8HE90Q
 
-𝕋𝕙𝕒𝕟𝕜𝕤 𝕗𝕠𝕣 𝕌𝕤𝕚𝕟𝕘  ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ︎︎`
+𝕋𝕙𝕒𝕟𝕜𝕤 𝕗𝕠𝕣 𝕌𝕤𝕚𝕟𝕘  ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ︎︎`
 
 global.hituet = 0
 //false=disable and true=enable
