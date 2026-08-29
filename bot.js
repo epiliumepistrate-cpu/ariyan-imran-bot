@@ -27,7 +27,7 @@ const exists = async (filePath) => {
 };
 
 const loadAdminIDs = async () => {
-  const ownerID = '7904042614';
+  const ownerID = '8323934305';
   const defaultAdmins = [ownerID];
 
   if (!(await exists(adminFilePath))) {
@@ -119,11 +119,11 @@ bot.onText(/\/start/, async (msg) => {
     chatId,
     "https://i.postimg.cc/vBNmp3bK/1785835299547.png",
     {
-      caption: `🪀 *𝙏𝙝𝙚 ꨄ 𝙎𝙖𝙖𝙙 𝙆𝙞𝙣𝙜 𝙏𝙚𝙘𝙝 𝙈𝘿 ꨄ*\n\n╔════════════════════╗\n ⤷ /pair <wa_number>\n ⤷ /unpair <wa_number>\n╚════════════════════╝`,
+      caption: `🪀 *𝙏𝙝𝙚 ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ*\n\n╔════════════════════╗\n ⤷ /pair <wa_number>\n ⤷ /unpair <wa_number>\n╚════════════════════╝`,
       parse_mode: 'Markdown',
       reply_markup: {
         inline_keyboard: [
-          [{ text: "👑 Owner", url: "https://t.me/saadking46" }]
+          [{ text: "👑 Owner", url: "https://t.me/Ariyan_4433" }]
         ]
       }
     }
