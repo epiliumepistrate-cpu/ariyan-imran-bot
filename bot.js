@@ -117,7 +117,7 @@ bot.onText(/\/start/, async (msg) => {
   // Private chat mein normal start message
   await bot.sendPhoto(
     chatId,
-    "https://i.postimg.cc/vBNmp3bK/1785835299547.png",
+    "https://i.postimg.cc/wTmPzS9s/Chat-GPT-Image-Aug-28-2026-08-51-24-PM.png",
     {
       caption: `🪀 *𝙏𝙝𝙚 ꨄ ᴀ ʀ ɪ ʏ ᴀ ɴ Ꮖᴍʀᴀɴ ꨄ*\n\n╔════════════════════╗\n ⤷ /pair <wa_number>\n ⤷ /unpair <wa_number>\n╚════════════════════╝`,
       parse_mode: 'Markdown',
